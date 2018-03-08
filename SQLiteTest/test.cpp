@@ -79,7 +79,7 @@ int main(int argc, char* argv[]) {
 
 	if (rc != SQLITE_OK) {
 		fprintf(stderr, "SQL error: %s\n", zErrMsg);
-		sqlite3_free(zErrMsg);
+		sqlite3_free(zErrMsg);  
 	}
 	else {
 		fprintf(stdout, "Records created successfully\n");
